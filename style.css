@@ -1,0 +1,108 @@
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .dark__mode {
+    position: absolute;
+    width: 50px;
+    padding: 7px;
+  }
+
+  .dark-mode {
+    background-color: #1e1e1e;
+  }
+
+  .button__container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .all__tasks,
+  .completed__tasks,
+  .incompleted__tasks {
+    background-color: grey;
+    width: 10rem;
+    padding: 9px 20px;
+    border-radius: 100px;
+  }
+
+  .disabled {
+    background-color: black;
+    pointer-events: none;
+  }
+
+  .input__wrapper {
+    margin: 5rem;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  input[type="text"] {
+    width:  100%;
+    padding:  12px  20px;
+    margin:  8px  0;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: rgb(88,16,214);
+    color: white;
+    padding:  14px  20px;
+    margin:  8px  0;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+  }
+
+  .delete__button {
+    background-color: #750010;
+    width: 100px;
+  }
+
+  .delete__button:hover {
+    opacity:  0.8;
+
+  }
+
+  ul {
+    list-style-type: none;
+    padding:  0;
+  }
+
+  li {
+    padding:  5px 12px;
+    margin-bottom:  7px;
+    background-color: #f9f9f9;
+    border:  1px solid #ddd;
+  }
+
+  label {
+    padding: 0 5px;
+  }
+
+  .list__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 500px) {
+    .button__container {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    .input__wrapper {
+      margin: 2em;
+    }
+  }
