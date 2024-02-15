@@ -5,7 +5,7 @@ import {
     showAllTasksButton,
     showCompletedTasksButton,
     showIncompletedTasksButton }
-  from './declaration.js';
+  from '/assets/scripts/declaration.js';
 
   document.addEventListener('DOMContentLoaded', () => {
     // Загрузка данных из localStorage
@@ -14,6 +14,7 @@ import {
       addTaskToList(task);
     });
 
+    console.log(addTaskButton);
 
     addTaskButton.addEventListener('click', () => {
       const taskText = taskInput.value.trim();

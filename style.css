@@ -11,7 +11,6 @@
 
 body {
     padding-top: 20px;
-    position: relative;
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
@@ -26,10 +25,21 @@ label {
   font-family: 'Nunito-Sans';
 }
 
+h1 {
+  color: rgb(156, 0, 0);
+}
+
   .dark__mode {
-    position: absolute;
     width: 50px;
     padding: 7px;
+  }
+
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
   }
 
   .dark-mode {
@@ -122,6 +132,6 @@ label {
     }
 
     .input__wrapper {
-      margin: 2em;
+      margin: 0 auto;
     }
   }
