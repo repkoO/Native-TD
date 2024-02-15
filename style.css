@@ -1,4 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Nunito-Sans';
+  src: url('./assets/font/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf');
+}
+
 body {
+    padding-top: 20px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -6,6 +18,13 @@ body {
     max-width: 1440px;
     margin: 0 auto;
   }
+
+h1,
+button,
+input,
+label {
+  font-family: 'Nunito-Sans';
+}
 
   .dark__mode {
     position: absolute;
