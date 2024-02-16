@@ -16,6 +16,16 @@ body {
     font-family: Arial, sans-serif;
     max-width: 1440px;
     margin: 0 auto;
+    background: url('./assets/img/radni-stol-koji-tip-ste-vi.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .list__wrapper {
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.833);
+    width: 50%;
+    margin: 0 auto;
+    height: 85vh;
   }
 
 h1,
@@ -29,17 +39,18 @@ h1 {
   color: rgb(156, 0, 0);
 }
 
-  .dark__mode {
-    width: 50px;
-    padding: 7px;
-  }
+.list__container {
+  border: 1px solid;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 50px;
+}
 
   .header__container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
   }
 
   .dark-mode {
@@ -55,20 +66,22 @@ h1 {
   .all__tasks,
   .completed__tasks,
   .incompleted__tasks {
-    background-color: grey;
-    width: 10rem;
+    background-color: transparent;
+    width: 130px;
     padding: 9px 20px;
-    border-radius: 100px;
+    border-radius: 1px;
+    color: black;
+    font-size: 12px;
   }
 
   .disabled {
-    background-color: black;
+    background-color: transparent;
     pointer-events: none;
+    border-bottom: 2px solid black;
   }
 
   .input__wrapper {
-    margin: 5rem;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -84,7 +97,7 @@ h1 {
   }
 
   button {
-    background-color: rgb(88,16,214);
+    background-color: rgb(207, 134, 50);
     color: white;
     padding:  14px  20px;
     margin:  8px  0;
@@ -108,30 +121,56 @@ h1 {
     padding:  0;
   }
 
-  li {
-    padding:  5px 12px;
-    margin-bottom:  7px;
-    background-color: #f9f9f9;
-    border:  1px solid #ddd;
+  label {
+    flex: 1;
+    padding: 0 5px;
   }
 
-  label {
-    padding: 0 5px;
+  .checkbox__value {
+    margin-right: 15px;
   }
 
   .list__item {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding:  5px 12px;
+    margin-bottom:  7px;
+    border-bottom:  1px solid #ddd;
   }
 
-  @media screen and (max-width: 500px) {
+  .list__item:hover {
+    background-color: rgba(0, 128, 0, 0.048);
+   }
+
+  @media screen and (max-width: 855px) {
     .button__container {
       flex-direction: column;
       margin: 0 auto;
+      align-items: center;
+    }
+
+    h1 {
+      margin: 10px;
+      font-size: 16px;
+    }
+
+    .delete__button {
+      display: flex;
+      width: 80px;
+      justify-content: center;
+      font-size: 12px;
+    }
+
+    .addTaskButton {
+      font-size: 12px;
     }
 
     .input__wrapper {
       margin: 0 auto;
+    }
+
+    .list__wrapper {
+      height: 95vh;
     }
   }
